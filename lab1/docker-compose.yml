@@ -5,8 +5,9 @@ services:
       - "8080:5000"   
     depends_on:
       - swarch-db
+    restart: on-failure
     environment:
-      - DATABASE_URL=mysql://root:123@swarch-db/swarch-db
+      - DATABASE_URL=mysql+mysqldb://root:123@swarch-db/swarch-db
     volumes:
       - .:/app
 
