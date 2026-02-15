@@ -1,0 +1,23 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (created by uv or venv)
+.venv/
+venv/
+env/
+
+# Environment Variables (keep secrets out of git!)
+.env
+
+# IDE settings (optional, but recommended)
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker (if you ever map data locally instead of using named volumes)
+mysql-data/
